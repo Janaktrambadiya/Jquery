@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+</head>
+<style>
+    .main{
+        padding: 10px;
+        background-color: blueviolet;
+        /* display: none; */
+        text-align: center;
+    }
+    .sub{
+        padding: 50px;
+        background-color: aqua;
+        display: none;
+        text-align: center;
+        
+    }
+</style>
+<body>
+    <button id="stop">Stop</button>
+    <div class="main">click me</div>
+    <div class="sub">slide</div>
+</body>
+<script>
+    $(document).ready(function () {
+        $(".main").click(function () {
+            $(".sub").slideDown(3000).slideUp(4000).css({backgroungColor:"blue"})
+            
+        })
+        
+    })
+
+    // $(document).ready(function () {
+    //     $(".main").dblclick(function () {
+    //         $(".sub").slideUp(3000)
+            
+    //     })
+        
+    // })
+
+    // $(document).ready(function () {
+    //     $(".main").click(function () {
+    //         $(".sub").toggle(3000)
+            
+    //     })
+        
+    // })
+
+    // $(document).ready(function () {
+    //     $("#stop").click(function () {
+    //         $(".sub").stop(3000)
+            
+    //     })
+        
+    // })
+</script>
+</html>

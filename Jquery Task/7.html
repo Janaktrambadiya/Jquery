@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+<body>
+    <p id="one">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, quis dolorem omnis officia doloremque inventore molestiae molestias iusto <b>unde</b> voluptatum qui ipsa repellat architecto quae magnam perspiciatis eum labore tempora!</p>
+    <button id="btn1">get text</button>
+    <button id="btn2">get html</button>
+    <button id="hidee">hide</button>
+    <input type="text" name="" id="abc" value="Ayush PATEL">
+    <button id="Valuee">show value</button>
+    <a href="https://www.coursera.org/" id="two">click to here</a>
+    <button id="three">show link</button>
+</body>
+<script>
+    $(document).ready(function () {
+        $("#btn1").click(function () {
+            alert(
+                $("#one").text()
+            )
+            
+        })
+        $("#btn2").click(function () {
+            alert(
+                $("#one").html()
+            )
+            
+        })
+        $("#hidee").click(function () {
+                $("#one").hide()
+            
+            
+        })
+        $("#Valuee").click(function () {
+            alert(
+                $("#abc").val()
+            )
+            
+        })
+        $("#three").click(function () {
+            alert(
+                $("#two").attr("href")
+            )
+            
+        })
+        
+    })
+</script>
+</html>

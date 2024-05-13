@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+<body>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab, dolorum odit? Nihil tempora fuga repellendus accusamus itaque, placeat corrupti possimus illo libero dolorum dignissimos. Saepe eos exercitationem consequuntur culpa architecto repellendus fugit rem dolore, doloremque fugiat? Numquam sapiente rem asperiores totam neque sed in nostrum voluptas nemo ad molestias ipsam odit illo cum amet, quaerat a vitae aliquid dolore obcaecati omnis similique explicabo! Animi quos maiores pariatur architecto dolorem! Ducimus vero nam expedita perferendis in dolore blanditiis harum similique nostrum ratione nobis alias, quos quidem possimus hic! Recusandae libero ea praesentium mollitia nam, possimus corporis autem fugit ut magni porro ullam, quis reiciendis aspernatur veniam, nisi esse voluptatem dicta velit optio odit expedita dolor debitis. Aperiam cum molestiae voluptas fugit repudiandae in amet aliquam nostrum provident dicta? Harum animi id, nisi odio cupiditate necessitatibus. Velit nesciunt quibusdam dolores quas saepe nostrum a odio tempore dolor molestiae. Sit ut molestiae, omnis aspernatur nostrum facilis rem impedit odio. Perspiciatis dolore quidem, aut animi nisi accusantium voluptatum tenetur ut hic, ratione deleniti. Nihil, praesentium, esse omnis a maxime corporis, blanditiis aspernatur quidem dignissimos fuga maiores molestiae reprehenderit rerum minus dolorum error accusamus impedit quos ratione. Libero recusandae rerum explicabo, dolorem quo expedita temporibus minus distinctio eveniet ab doloremque vel, amet aperiam dolor tempora soluta assumenda veniam. Officiis minima quae laborum blanditiis alias? Debitis ipsum nostrum iusto. Aliquid unde adipisci eos autem. Autem similique, doloribus mollitia fugit quae culpa labore, iure libero a at qui, accusamus atque delectus quisquam magnam eius doloremque repudiandae sunt nemo impedit nostrum ea ipsum voluptatibus. Vel, cupiditate provident! Culpa nam totam aperiam? Aspernatur, quis officia quaerat nulla eius sunt corporis eveniet, fuga, distinctio vero dolorem. Minima consectetur amet molestias laborum in qui a reiciendis quasi earum, inventore vitae aspernatur cumque nesciunt assumenda accusamus, debitis, provident animi. Excepturi architecto debitis vero doloribus commodi quibusdam officia? Tenetur sunt culpa nemo asperiores. Fuga nam sapiente earum ad odio accusamus iste esse. Ad magni voluptas eaque? Iure officiis suscipit est ea incidunt velit, possimus ipsum quam quos officia laudantium atque quaerat, odit corrupti tempore magnam, eos placeat amet provident ipsam ipsa voluptatem quidem! Corporis expedita nihil error dolorem libero, debitis consequatur molestias velit ipsam, inventore obcaecati tempore! Accusamus sit aut provident consequuntur doloremque repellendus officia placeat, quia vero, architecto a excepturi sequi tempore dicta voluptate minima est. Ut, dolore distinctio sequi quae similique, error nesciunt natus exercitationem nostrum, temporibus assumenda eveniet ullam facere!</p>
+    <button id="A">Hide</button>
+    <button id="B">show</button>
+</body>
+<script>
+    var abc = $.noConflict()
+    // $.noConflict()
+    abc(document).ready(function () {
+        abc("#A").click(function () {
+            abc("p").hide(3000)
+            
+        })
+        
+    })
+
+    abc(document).ready(function () {
+        abc("#B").click(function () {
+            abc("p").show(3000)
+            
+        })
+        
+    })
+    // $.noConflict()
+    // jQuery(document).ready(function () {
+    //     jQuery("button").click(function () {
+    //         jQuery("p").hide(3000)
+            
+    //     })
+        
+    // })
+</script>
+</html>

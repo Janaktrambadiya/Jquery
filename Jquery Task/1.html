@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <p id="two">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi veniam quisquam impedit necessitatibus sed placeat? Aliquam vero velit nobis maiores quam fugit, ipsa hic eligendi quis unde ab suscipit assumenda voluptate excepturi expedita soluta illo ex pariatur nam ea? Fugiat, sunt laboriosam. Vitae consequatur consequuntur molestiae, vel ex ab error?</p>
+    <button id="one">hide</button>
+    <button id="c">show</button>
+    <button class="b">toggel</button>
+</body>
+<script>
+       
+                       //    hide code       
+     $(document).ready(function () {
+       $("#one").click(function () {
+        $("p").hide(5000)
+        
+       })
+     })
+
+                        //   Show code
+     $(document).ready(function () {
+       $("#c").click(function () {
+        $("p").show(2000)
+        
+       })
+     })
+
+                        //    Toggle code 
+    //  $(document).ready(function () {
+    //    $("button").click(function () {
+    //     $("p").toggle(2000)
+        
+    //    })
+
+        
+    //  })
+     
+</script>
+</html>

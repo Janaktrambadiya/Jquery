@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=., initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        #div1{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            display: none;
+        }
+        #div2{
+            height: 100px;
+            width: 100px;
+            background-color: blueviolet;
+                       display: none;
+        }
+        #div3{
+            height: 100px;
+            width: 100px;
+            background-color: aqua;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <div id="div3"></div>
+    <button id="one">Fadein</button>
+    <button id="two">Fadeout</button>
+    <button id="three">toggle</button>
+
+</body>
+<script>
+    $(document).ready(function () {
+        $("#one").click(function () {
+            $("#div1").fadeIn(7000)
+            $("#div2").fadeIn("5000")
+            $("#div3").fadeIn(3000)
+            
+        })
+        
+    })
+
+    $(document).ready(function () {
+        $("#two").click(function () {
+            $("#div1").fadeOut(2000)
+            $("#div2").fadeOut("5000")
+            $("#div3").fadeOut(3000)
+            
+        })
+        
+    })
+    $(document).ready(function () {
+        $("#three").click(function () {
+            $("#div1").fadeToggle(2000)
+            $("#div2").fadeToggle("5000")
+            $("#div3").fadeToggle(3000)
+            
+        })
+        
+    })
+</script>
+</html>
